@@ -11,7 +11,7 @@ ionic serve
 ### Android emulator
 
 1) delete `android` directory
-2) delete `www~ directory
+2) delete `www` directory
 
 > bothe 1 & 2 are to ensure a propper build is run in the emulator
 
