@@ -3,7 +3,15 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  auth_config: {
+    client_id: 'interactive.public',
+    server_host: 'https://demo.identityserver.io/',
+    redirect_url: 'com.photogallery.demo://callback',
+    end_session_redirect_url: 'com.photogallery.demo://endsession',
+    scopes: 'openid profile email api offline_access',
+    pkce: true,
+  },
 };
 
 /*

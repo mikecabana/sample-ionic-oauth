@@ -1,5 +1,5 @@
 {
-  "appId": "io.ionic.starter",
+  "appId": "com.photogallery.demo",
   "appName": "photo-gallery",
   "bundledWebRuntime": false,
   "npmClient": "npm",

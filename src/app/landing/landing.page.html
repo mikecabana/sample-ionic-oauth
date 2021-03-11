@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Logged Out</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngIf="action">
+    <!-- <ion-card-header> Action Data </ion-card-header> -->
+    <!-- <ion-card-content> {{action | json}} </ion-card-content> -->
+    <ion-card-content>
+      <ng-container
+        *ngIf="action.action !== AuthActions?.SignInSuccess &&
+        action.action !== AuthActions?.LoadTokenFromStorageSuccess"
+      >
+        <ion-button expand="block" fill="outline" (click)="signIn()"
+          >Sign In</ion-button
+        >
+      </ng-container>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
