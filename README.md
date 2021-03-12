@@ -13,7 +13,7 @@ ionic serve
 1) delete `android` directory
 2) delete `www` directory
 
-> bothe 1 & 2 are to ensure a propper build is run in the emulator
+> both 1 & 2 are to ensure a proper build is run in the emulator
 
 3) run `ionic build` to generate a new `www` directory
 4) run `ionic capacitor add android` to generate a new `android` directory
@@ -22,4 +22,14 @@ ionic serve
 
 ### iOS Emulator
 
-todo
+1) delete `ios` directory
+2) delete `www` directory
+
+> both 1 & 2 are to ensure a proper build is run in the emulator
+
+3) run `ionic build` to generate a new `www` directory
+4) run `ionic capacitor add ios` to generate a new `ios` directory
+5) run `ionic capacitor open ios` which will open xcode and load your app
+6) update your `URL Schemes` in `Info.plist` using the same appId as in you `capacitor.config.json`
+7) chose a device then click play to start your app in the ios device emulator
+
