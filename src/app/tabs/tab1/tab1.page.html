@@ -15,4 +15,33 @@
             <ion-title size="large">Home</ion-title>
         </ion-toolbar>
     </ion-header>
+
+    <ion-card>
+
+        <ion-card-header>
+            <ion-card-title>No Auth</ion-card-title>
+            <ion-card-subtitle>Will try to get ToDo without token</ion-card-subtitle>
+        </ion-card-header>
+
+        <ion-card-content>
+            <ion-button expand="block" fill="outline" (click)="getToDo()">Get ToDo</ion-button>
+            <ion-spinner *ngIf="loading" name="crescent"></ion-spinner>
+            {{ todo | json}}
+        </ion-card-content>
+
+    </ion-card>
+    <ion-card>
+
+        <ion-card-header>
+            <ion-card-title>With Auth</ion-card-title>
+            <ion-card-subtitle>Will try to get ToDo WITH token</ion-card-subtitle>
+        </ion-card-header>
+
+        <ion-card-content>
+            <ion-button expand="block" fill="outline" (click)="getAuthToDo()">Get ToDo</ion-button>
+            <ion-spinner *ngIf="authLoading" name="crescent"></ion-spinner>
+            {{ authTodo | json}}
+        </ion-card-content>
+
+    </ion-card>
 </ion-content>
